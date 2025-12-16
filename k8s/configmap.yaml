@@ -1,0 +1,13 @@
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: devops-lab
+  labels:
+    app: demo-app
+data:
+  DB_HOST: postgres
+  DB_NAME: labdb
+  DB_USER: labuser
+  DB_PORT: "5432"
